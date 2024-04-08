@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BikesMenu">
+  <grid id="27dc6" binding="BikesMainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1201" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="18dc8" binding="BikesTitlePanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="10" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9bcae" class="javax.swing.JTextField" binding="BikesTextField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <horizontalAlignment value="0"/>
+              <text value="Bikes"/>
+            </properties>
+          </component>
+          <component id="6f5cf" class="javax.swing.JTextField" binding="BikesSubtitleTextField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <text value="Further information about the table is displayed here."/>
+              <toolTipText value="Further information about the table is displayed here"/>
+            </properties>
+          </component>
+          <component id="d0920" class="javax.swing.JButton" binding="BikesAddRow">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Row"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="734ce" binding="BikesScrollPane">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="9" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="23bd7" class="javax.swing.JTable" binding="BikesTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <vspacer id="9eed1">
+        <constraints>
+          <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="e5209" class="javax.swing.JComboBox" binding="BikesRowNumberComboBox">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="0"/>
+          </model>
+          <toolTipText value="Select the row you want to add to"/>
+        </properties>
+      </component>
+      <component id="691e3" class="javax.swing.JTextField" binding="BikesNumberPlateTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <text value=""/>
+          <toolTipText value="Input the number plate of the bike"/>
+        </properties>
+      </component>
+      <component id="e8b02" class="javax.swing.JComboBox" binding="BikesSizeComboBox">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Micro"/>
+            <item value="Mini"/>
+            <item value="Junior"/>
+            <item value="Expert"/>
+            <item value="Expert XL"/>
+            <item value="Pro"/>
+            <item value="Pro XL"/>
+            <item value="Pro XXL"/>
+          </model>
+          <toolTipText value="Input the size of the bike"/>
+        </properties>
+      </component>
+      <component id="da021" class="javax.swing.JTextField" binding="BikesBrandTextField">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the brand of the bike"/>
+        </properties>
+      </component>
+      <component id="a8a13" class="javax.swing.JTextField" binding="BikesMakeTextField">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the make of the bike"/>
+        </properties>
+      </component>
+      <component id="20359" class="javax.swing.JComboBox" binding="BikesWashedComboBox">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Yes"/>
+            <item value="No"/>
+          </model>
+          <toolTipText value="Is the bike clean of dirt and mud?"/>
+        </properties>
+      </component>
+      <component id="f8600" class="javax.swing.JTextField" binding="BikesColourTextField">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the colour of the bike"/>
+        </properties>
+      </component>
+      <component id="c5db" class="javax.swing.JComboBox" binding="BikesOperationalComboBox">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Yes"/>
+            <item value="No"/>
+          </model>
+          <toolTipText value="Can the bike be ridden?"/>
+        </properties>
+      </component>
+      <component id="426a6" class="javax.swing.JTextField" binding="BikesExtraInfoTextField">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input any extra information about the rider"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="SessionsMenu">
+  <grid id="27dc6" binding="SessionsMainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1291" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="ebfb0" binding="SessionsTitlePanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="12" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <toolTipText value="Sessions"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="7de9" class="javax.swing.JTextField" binding="SessionsTitleTextField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <horizontalAlignment value="0"/>
+              <text value="Sessions"/>
+            </properties>
+          </component>
+          <component id="7a621" class="javax.swing.JButton" binding="SessionsAddRow">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add row"/>
+            </properties>
+          </component>
+          <component id="3e874" class="javax.swing.JTextField" binding="SessionsSubtitleTextField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <text value="Further information about the table is displayed here."/>
+              <toolTipText value="Further information about the table is displayed here"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="a369e">
+        <constraints>
+          <grid row="2" column="11" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <scrollpane id="fdb4" binding="SessionsScrollPane">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="11" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <toolTipText value="Use the boxes above to enter values into the table"/>
+        </properties>
+        <border type="none" title=""/>
+        <children>
+          <component id="2fd82" class="javax.swing.JTable" binding="SessionsTable">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <enabled value="false"/>
+              <fillsViewportHeight value="false"/>
+              <toolTipText value="Use the boxes above to enter values into the table"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="cfff2" class="javax.swing.JTextField" binding="SessionsDateTextField">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the date of the session in the form DD/MM/YYYY"/>
+        </properties>
+      </component>
+      <component id="96951" class="javax.swing.JComboBox" binding="SessionsStartComboBox">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="00:00"/>
+            <item value="00:15"/>
+            <item value="00:30"/>
+            <item value="00:45"/>
+            <item value="01:00"/>
+            <item value="01:15"/>
+            <item value="01:30"/>
+            <item value="01:45"/>
+            <item value="02:00"/>
+            <item value="02:15"/>
+            <item value="02:30"/>
+            <item value="02:45"/>
+            <item value="03:00"/>
+            <item value="03:15"/>
+            <item value="03:30"/>
+            <item value="03:45"/>
+            <item value="04:00"/>
+            <item value="04:15"/>
+            <item value="04:30"/>
+            <item value="04:45"/>
+            <item value="05:00"/>
+            <item value="05:15"/>
+            <item value="05:30"/>
+            <item value="05:45"/>
+            <item value="06:00"/>
+            <item value="06:15"/>
+            <item value="06:30"/>
+            <item value="06:45"/>
+            <item value="07:00"/>
+            <item value="07:15"/>
+            <item value="07:30"/>
+            <item value="07:45"/>
+            <item value="08:00"/>
+            <item value="08:15"/>
+            <item value="08:30"/>
+            <item value="08:45"/>
+            <item value="09:00"/>
+            <item value="09:15"/>
+            <item value="09:30"/>
+            <item value="09:45"/>
+            <item value="10:00"/>
+            <item value="10:15"/>
+            <item value="10:30"/>
+            <item value="10:45"/>
+            <item value="11:00"/>
+            <item value="11:15"/>
+            <item value="11:30"/>
+            <item value="11:45"/>
+            <item value="12:00"/>
+            <item value="12:15"/>
+            <item value="12:30"/>
+            <item value="12:45"/>
+            <item value="13:00"/>
+            <item value="13:15"/>
+            <item value="13:30"/>
+            <item value="13:45"/>
+            <item value="14:00"/>
+            <item value="14:15"/>
+            <item value="14:30"/>
+            <item value="14:45"/>
+            <item value="15:00"/>
+            <item value="15:15"/>
+            <item value="15:30"/>
+            <item value="15:45"/>
+            <item value="16:00"/>
+            <item value="16:15"/>
+            <item value="16:30"/>
+            <item value="16:45"/>
+            <item value="17:00"/>
+            <item value="17:15"/>
+            <item value="17:30"/>
+            <item value="17:45"/>
+            <item value="18:00"/>
+            <item value="18:15"/>
+            <item value="18:30"/>
+            <item value="18:45"/>
+            <item value="19:00"/>
+            <item value="19:15"/>
+            <item value="19:30"/>
+            <item value="19:45"/>
+            <item value="20:00"/>
+            <item value="20:15"/>
+            <item value="20:30"/>
+            <item value="20:45"/>
+            <item value="21:00"/>
+            <item value="21:15"/>
+            <item value="21:30"/>
+            <item value="21:45"/>
+            <item value="22:00"/>
+            <item value="22:15"/>
+            <item value="22:30"/>
+            <item value="22:45"/>
+            <item value="23:00"/>
+            <item value="23:15"/>
+            <item value="23:30"/>
+            <item value="23:45"/>
+          </model>
+          <toolTipText value="Input the starting time of the session"/>
+        </properties>
+      </component>
+      <component id="feafd" class="javax.swing.JComboBox" binding="SessionsEndComboBox">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="00:00"/>
+            <item value="00:15"/>
+            <item value="00:30"/>
+            <item value="00:45"/>
+            <item value="01:00"/>
+            <item value="01:15"/>
+            <item value="01:30"/>
+            <item value="01:45"/>
+            <item value="02:00"/>
+            <item value="02:15"/>
+            <item value="02:30"/>
+            <item value="02:45"/>
+            <item value="03:00"/>
+            <item value="03:15"/>
+            <item value="03:30"/>
+            <item value="03:45"/>
+            <item value="04:00"/>
+            <item value="04:15"/>
+            <item value="04:30"/>
+            <item value="04:45"/>
+            <item value="05:00"/>
+            <item value="05:15"/>
+            <item value="05:30"/>
+            <item value="05:45"/>
+            <item value="06:00"/>
+            <item value="06:15"/>
+            <item value="06:30"/>
+            <item value="06:45"/>
+            <item value="07:00"/>
+            <item value="07:15"/>
+            <item value="07:30"/>
+            <item value="07:45"/>
+            <item value="08:00"/>
+            <item value="08:15"/>
+            <item value="08:30"/>
+            <item value="08:45"/>
+            <item value="09:00"/>
+            <item value="09:15"/>
+            <item value="09:30"/>
+            <item value="09:45"/>
+            <item value="10:00"/>
+            <item value="10:15"/>
+            <item value="10:30"/>
+            <item value="10:45"/>
+            <item value="11:00"/>
+            <item value="11:15"/>
+            <item value="11:30"/>
+            <item value="11:45"/>
+            <item value="12:00"/>
+            <item value="12:15"/>
+            <item value="12:30"/>
+            <item value="12:45"/>
+            <item value="13:00"/>
+            <item value="13:15"/>
+            <item value="13:30"/>
+            <item value="13:45"/>
+            <item value="14:00"/>
+            <item value="14:15"/>
+            <item value="14:30"/>
+            <item value="14:45"/>
+            <item value="15:00"/>
+            <item value="15:15"/>
+            <item value="15:30"/>
+            <item value="15:45"/>
+            <item value="16:00"/>
+            <item value="16:15"/>
+            <item value="16:30"/>
+            <item value="16:45"/>
+            <item value="17:00"/>
+            <item value="17:15"/>
+            <item value="17:30"/>
+            <item value="17:45"/>
+            <item value="18:00"/>
+            <item value="18:15"/>
+            <item value="18:30"/>
+            <item value="18:45"/>
+            <item value="19:00"/>
+            <item value="19:15"/>
+            <item value="19:30"/>
+            <item value="19:45"/>
+            <item value="20:00"/>
+            <item value="20:15"/>
+            <item value="20:30"/>
+            <item value="20:45"/>
+            <item value="21:00"/>
+            <item value="21:15"/>
+            <item value="21:30"/>
+            <item value="21:45"/>
+            <item value="22:00"/>
+            <item value="22:15"/>
+            <item value="22:30"/>
+            <item value="22:45"/>
+            <item value="23:00"/>
+            <item value="23:15"/>
+            <item value="23:30"/>
+            <item value="23:45"/>
+          </model>
+          <toolTipText value="Input the ending time of this session"/>
+        </properties>
+      </component>
+      <component id="ae630" class="javax.swing.JComboBox" binding="SessionsSkillComboBox">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="All"/>
+            <item value="Novice"/>
+            <item value="Intermediate"/>
+            <item value="Expert"/>
+          </model>
+          <toolTipText value="Input the skill level of the session"/>
+        </properties>
+      </component>
+      <component id="7a004" class="javax.swing.JComboBox" binding="SessionsGenderComboBox">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="96" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="All"/>
+            <item value="Male only"/>
+            <item value="Female only"/>
+          </model>
+          <toolTipText value="Input the genders allowed in the session"/>
+        </properties>
+      </component>
+      <component id="f589e" class="javax.swing.JTextField" binding="SessionsLeaderTextField">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Input the leader of the session"/>
+        </properties>
+      </component>
+      <component id="36305" class="javax.swing.JTextField" binding="SessionsExtraInfoTextField">
+        <constraints>
+          <grid row="1" column="9" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input any extra information about the session"/>
+        </properties>
+      </component>
+      <component id="789a5" class="javax.swing.JComboBox" binding="SessionsRowNumberComboBox">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="0"/>
+          </model>
+          <toolTipText value="Select the row you want to add to"/>
+        </properties>
+      </component>
+      <component id="67b0" class="javax.swing.JTextField" binding="SessionsNameTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the name of the session"/>
+        </properties>
+      </component>
+      <component id="96ea1" class="javax.swing.JComboBox" binding="SessionsTypeComboBox">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Skills"/>
+            <item value="Race"/>
+            <item value="Gate Practice"/>
+            <item value="Flats"/>
+            <item value="Hill"/>
+            <item value="Other"/>
+          </model>
+          <toolTipText value="Input the type of session it is"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

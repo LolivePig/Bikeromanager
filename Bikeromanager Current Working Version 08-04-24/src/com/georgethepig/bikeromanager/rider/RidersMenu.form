@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.georgethepig.bikeromanager.rider.RidersMenu">
+  <grid id="27dc6" binding="RidersMainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1233" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="3a9a6" binding="RidersScrollPane">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="11" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <toolTipText value="Use the boxes above to enter values into the table"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="fe195" class="javax.swing.JTable" binding="RidersTable">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <enabled value="false"/>
+              <toolTipText value="Use the boxes above to enter values into the table"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="83e50" binding="RidersTitlePanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="12" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="630af" class="javax.swing.JTextField" binding="RidersTextField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <horizontalAlignment value="0"/>
+              <text value="Riders"/>
+            </properties>
+          </component>
+          <component id="c0c97" class="javax.swing.JButton" binding="RidersAddRow">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add row"/>
+            </properties>
+          </component>
+          <component id="94007" class="javax.swing.JTextField" binding="RidersSubtitleTextField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <text value="Further information about the table is displayed here."/>
+              <toolTipText value="Further information about the table is displayed here"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="54b7" class="javax.swing.JComboBox" binding="RidersRowNumberComboBox">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="0"/>
+          </model>
+          <toolTipText value="Select the row you want to add to"/>
+        </properties>
+      </component>
+      <component id="c3bf" class="javax.swing.JTextField" binding="RidersNameTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input the name of the rider"/>
+        </properties>
+      </component>
+      <component id="28f9d" class="javax.swing.JComboBox" binding="RidersAgeComboBox">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="3"/>
+            <item value="4"/>
+            <item value="5"/>
+            <item value="6"/>
+            <item value="7"/>
+            <item value="8"/>
+            <item value="9"/>
+            <item value="10"/>
+            <item value="11"/>
+            <item value="12"/>
+            <item value="13"/>
+            <item value="14"/>
+            <item value="15"/>
+            <item value="16"/>
+            <item value="17"/>
+            <item value="18"/>
+            <item value="19"/>
+            <item value="20"/>
+            <item value="21"/>
+            <item value="22"/>
+            <item value="23"/>
+            <item value="24"/>
+            <item value="25"/>
+            <item value="26"/>
+            <item value="27"/>
+            <item value="28"/>
+            <item value="29"/>
+            <item value="30"/>
+            <item value="31"/>
+            <item value="32"/>
+            <item value="33"/>
+            <item value="34"/>
+            <item value="35"/>
+            <item value="36"/>
+            <item value="37"/>
+            <item value="38"/>
+            <item value="39"/>
+            <item value="40"/>
+            <item value="41"/>
+            <item value="42"/>
+            <item value="43"/>
+            <item value="44"/>
+            <item value="45"/>
+            <item value="46"/>
+            <item value="47"/>
+            <item value="48"/>
+            <item value="49"/>
+            <item value="50"/>
+            <item value="51"/>
+            <item value="52"/>
+            <item value="53"/>
+            <item value="54"/>
+            <item value="55"/>
+            <item value="56"/>
+            <item value="57"/>
+            <item value="58"/>
+            <item value="59"/>
+            <item value="60"/>
+            <item value="61"/>
+            <item value="62"/>
+            <item value="63"/>
+            <item value="64"/>
+            <item value="65"/>
+            <item value="66"/>
+            <item value="67"/>
+            <item value="68"/>
+            <item value="69"/>
+            <item value="70"/>
+            <item value="71"/>
+            <item value="72"/>
+            <item value="73"/>
+            <item value="74"/>
+            <item value="75"/>
+            <item value="76"/>
+            <item value="77"/>
+            <item value="78"/>
+            <item value="79"/>
+            <item value="80"/>
+            <item value="81"/>
+            <item value="82"/>
+            <item value="83"/>
+            <item value="84"/>
+            <item value="85"/>
+            <item value="86"/>
+            <item value="87"/>
+            <item value="88"/>
+            <item value="89"/>
+            <item value="90"/>
+            <item value="91"/>
+            <item value="92"/>
+            <item value="93"/>
+            <item value="94"/>
+            <item value="95"/>
+            <item value="96"/>
+            <item value="97"/>
+            <item value="98"/>
+            <item value="99"/>
+          </model>
+          <toolTipText value="Input the age of the rider"/>
+        </properties>
+      </component>
+      <component id="97d97" class="javax.swing.JComboBox" binding="RidersBikeSizeComboBox">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Micro"/>
+            <item value="Mini"/>
+            <item value="Junior"/>
+            <item value="Expert"/>
+            <item value="Expert XL"/>
+            <item value="Pro"/>
+            <item value="Pro XL"/>
+            <item value="Pro XXL"/>
+          </model>
+          <toolTipText value="Input the size of bike the rider uses"/>
+        </properties>
+      </component>
+      <component id="b5e14" class="javax.swing.JComboBox" binding="RidersSkillComboBox">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Novice"/>
+            <item value="Intermediate"/>
+            <item value="Expert"/>
+          </model>
+          <toolTipText value="Input the skill level of the rider"/>
+        </properties>
+      </component>
+      <component id="ef394" class="javax.swing.JComboBox" binding="RidersMemberComboBox">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Yes"/>
+            <item value="No"/>
+          </model>
+          <toolTipText value="Is the rider a member of the club?"/>
+        </properties>
+      </component>
+      <component id="a3181" class="javax.swing.JComboBox" binding="RidersGenderComboBox">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Male"/>
+            <item value="Female"/>
+            <item value="Other"/>
+          </model>
+          <toolTipText value="Input the gender of the rider"/>
+        </properties>
+      </component>
+      <component id="e0e65" class="javax.swing.JTextField" binding="RidersExtraInfoTextField">
+        <constraints>
+          <grid row="1" column="9" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Input any extra information about the rider"/>
+        </properties>
+      </component>
+      <component id="6cf20" class="javax.swing.JTextField" binding="RidersSessionsPaidTextField">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Input how many sessions the rider has paid for"/>
+        </properties>
+      </component>
+      <component id="9884e" class="javax.swing.JComboBox" binding="RidersOwnKitComboBox">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Yes"/>
+            <item value="No"/>
+          </model>
+          <toolTipText value="Does the rider have their own kit?"/>
+        </properties>
+      </component>
+      <vspacer id="8e64c">
+        <constraints>
+          <grid row="2" column="11" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

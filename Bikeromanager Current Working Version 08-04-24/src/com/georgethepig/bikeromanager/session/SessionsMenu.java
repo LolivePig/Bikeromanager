@@ -5,6 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Objects;
 import javax.swing.*;
 import javax.swing.JFrame;
@@ -41,8 +43,8 @@ public class SessionsMenu {
     public DefaultTableModel model;
 
     public SessionsMenu() {
-
         model = (DefaultTableModel)SessionsTable.getModel();
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         System.out.println("Sessions Menu running");
 
@@ -55,7 +57,15 @@ public class SessionsMenu {
         model.addColumn("Session Type");
         model.addColumn("Session Leader");
         model.addColumn("Extra Info");
-        model.addRow(new Object[]{"Saturday Skills Session","28/10/2023","11:00","13:00","Intermediate","All","Skills","Silvia","Alan as helper"});
+        LocalDate date = LocalDate.parse("28/10/2023", dateFormatter);
+        Session exemplarSession = new Session("Saturday Skills Session",date,"11:00","13:00",
+                "Intermediate","All","Skills","Silvia","Alan as helper");
+        model.addRow(new Object[]{exemplarSession.getName(),exemplarSession.getDate(),exemplarSession.getStartTime(),
+                exemplarSession.getEndTime(),exemplarSession.getSkillLevel(),exemplarSession.getGenders(),
+                exemplarSession.getSessionType(),exemplarSession.getSessionLeader(),exemplarSession.getExtraInfo()});
+
+        if (exemplarSession.getDate().toString().equals("2023-10-28")) {
+            model.setValueAt("28/10/2023",0,1);}
 
 //        for(int h = 0; h < 99; h++) {
 //            model.addRow(new Object[]{"","","","","","","","",""});
@@ -122,7 +132,6 @@ public class SessionsMenu {
         SessionsDateTextField.addActionListener(e -> {
             model.setValueAt(SessionsDateTextField.getText(),SessionsRowNumberComboBox.getSelectedIndex(),1);
 
-            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             String inputDate = model.getValueAt(SessionsRowNumberComboBox.getSelectedIndex(), 1).toString();
             try {
                 LocalDate sessionsDate = LocalDate.parse(inputDate, dateFormatter);
